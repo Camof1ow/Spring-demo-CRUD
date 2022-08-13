@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,10 +10,9 @@ import org.springframework.http.HttpStatus;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ResponseDto<T> {
+public class CommentResponseDto<T> {
+
     private HttpStatus httpStatus;
-
-
     private T data;
 
 }
